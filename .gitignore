@@ -1,3 +1,6 @@
+#.js Files
+**/*.js
+
 # Logs
 logs
 *.log

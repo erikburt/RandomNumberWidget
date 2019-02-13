@@ -1,0 +1,20 @@
+{
+  "name": "random-number-widget",
+  "version": "1.0.0",
+  "description": "A very simple graphical random number generator written in Typescript with electron.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "cstart": "tsc ./main.ts && electron .",
+    "compile": "tsc ./main.ts"
+  },
+  "repository": "https://github.com/erikburt/RandomNumberWidget",
+  "keywords": [  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.4",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {  }
+}
