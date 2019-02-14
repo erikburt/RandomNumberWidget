@@ -6,17 +6,21 @@ function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 200,
-    height: 200,
+    height: 175,
+    minimizable: false,
+    maximizable: false,
+    //frame: false,
     webPreferences: {
       nodeIntegration: true
     }
   });
-
+  
+  mainWindow.setMenuBarVisibility(false);
+  mainWindow.setResizable(false);
   mainWindow.loadFile('index.html')
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
   mainWindow.on('closed', () => { mainWindow = null; });
 }
-
 
 app.on('ready', createWindow)
 
