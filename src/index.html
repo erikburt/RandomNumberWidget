@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number Generator</title>
+</head>
+
+<body>
+    <div id="all">
+        <div class="upper">
+            <span id="number" class="number"> 100 </span>
+        </div>
+        <div class="lower">
+            <div class="lower-left">
+                <input id="low-bound" type="number" name="low-bound" value="0" min="0">
+            </div>
+            <div class="lower-right">
+                <input id="up-bound" type="number" name="up-bound" value="100" min="1">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    console.log(module.paths);
+    require('./render.js')
+</script>
+
+</html>

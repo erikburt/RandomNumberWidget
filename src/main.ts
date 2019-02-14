@@ -17,7 +17,7 @@ function createWindow () {
   
   mainWindow.setMenuBarVisibility(false);
   mainWindow.setResizable(false);
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile('./src/index.html')
   //mainWindow.webContents.openDevTools()
   mainWindow.on('closed', () => { mainWindow = null; });
 }
